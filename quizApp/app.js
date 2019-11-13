@@ -14,18 +14,18 @@ function startGame()
      shuffledQuestions=questions.sort(()=>Math.random()- .5)
      currentQuestionIndex=0
       questionContainerElement.classList.remove('hide')
-      setNextQuestion()
+     setNextQuestion()
 
 }
 
 function setNextQuestion()
 { 
-    showQuestion(shuffledQuestion[currentQuestionIndex])
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question)
 {
-    questionElement.innerText=questions.question
+    questionElement.innerText=question.question
 }
 
 
